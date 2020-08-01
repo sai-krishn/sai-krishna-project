@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>GPA page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" /> <!-- https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans -->
+	<link href="css/style.css" rel="stylesheet" />
+<!--
+
+New Vision Template
+
+-->
+</head>
+<body>
+    <!-- Page Header -->
+    <div class="container-fluid">
+        <div class="tm-site-header">
+            <div class="">
+                <div class="tm-site-header-col">
+                    <div class="tm-site-header-left">
+                        <a href="index.html"><img src="img/aum_logo.png"></a>
+                    </div>
+                    
+                    <div class="tm-site-header-right tm-menu-container-outer top_search">
+                      <div class="input_right">
+                        <div class="search_area">
+                          <input type="text" id="appendUrl" name="search" placeholder="Google search">
+                          <a href="https://www.google.com/search?q=" id="baseUrl" class="btn_submit"><img src="img/search.png"></a>
+                        </div>
+                    
+                      </div>
+                    </div>
+                    <div class="tm-site-header-right tm-menu-container-outer menu_search">
+                      <div class="input_right menu_right">
+                        <div class="search_area">
+                          <input type="text" id="suffix" name="search" placeholder="Google search">
+                          <a href="https://www.google.com/search?q="
+                            onclick="document.location.href = $(this).attr('href')+$('#suffix').val(); return false;" id="baseUrl"
+                            class="btn_submit"><img src="img/search.png"></a></div>
+                    
+                      </div>
+                    </div>
+                    </ul>
+                </div>
+                                        <!--Navbar-->
+                        <nav class="navbar navbar-expand-lg">
+                        
+                          <!-- Collapsible content -->
+                          <div class="collapse navbar-collapse tm-nav">
+                        
+                            <!-- Links -->
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="program.html">Program</a>
+                              </li>
+                              <li class="nav-item active">
+                                <a class="nav-link tm-nav-link" href="gpa.html">GPA</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="application.html">Application</a>
+                              </li>
+                             
+                            <!-- Links -->
+                        
+                          </div>
+                          <!-- Collapsible content -->
+                        
+                        </nav>
+                        <!--/.Navbar-->
+                       <!--  <div class="rs_menu">
+                            <input class="menu-btn" type="checkbox" id="menu-btn" />
+                            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                            <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="program.html">Programs</a></li>
+                            <li><a href="gpa.html">GPA</a></li>
+                            <li><a href="application.html">Contact</a></li>
+                          </ul>
+                        </div> -->
+            </div>
+        </div>
+
+
+
+        <div class="tm-welcome--2">
+          <div class="tm-dotted-box-container">
+              <img src="img/calculator.png" />
+          </div>
+          <div class="tm-dotted-box-container">
+            <br>
+            <div class="bounce">
+              <p>GPA Calculate page</p>
+            </div>
+              
+          </div>
+          <div class="tm-dotted-box-container">
+              <img src="img/GPA.png" height="70%" width="70%" />
+          </div>
+        </div>
+
+
+                 
+        <!-- Main -->
+        <main>
+            <!-- Welcome section -->
+            <section class="tm-welcome">
+                   
+
+            </section>
+            
+            <div class="gpa_top">
+            <h3>Grading Chart</h3>
+                <ul>
+                  <li>A=4</li>
+                  <li>B=3</li>
+                  <li>C=2</li>
+                  <li>D=1</li>
+                  <li>f=0</li>
+              </ul>
+            </div>
+            <div class="gpa_area">
+              <div class="gpa_calculate">
+                
+                <form name="GPACalcForm">
+                  <table id="table1" border="5" bgcolor="#cfcccc" cellpadding="5" cellspacing="2">
+                  <tbody><tr><th></th>
+                  <th>Grade</th>
+                  <th>Credits</th>
+                  </tr><tr>
+                  <td>Class 1</td>
+                  <td><input type="TEXT" size="5" name="GR1" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR1" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 2</td>
+                  <td><input type="TEXT" size="5" name="GR2" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR2" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 3</td>
+                  <td><input type="TEXT" size="5" name="GR3" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR3" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 4</td>
+                  <td><input type="TEXT" size="5" name="GR4" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR4" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 5</td>
+                  <td><input type="TEXT" size="5" name="GR5" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR5" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 6</td>
+                  <td><input type="TEXT" size="5" name="GR6" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR6" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 7</td>
+                  <td><input type="TEXT" size="5" name="GR7" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR7" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr>
+                  <td>Class 8</td>
+                  <td><input type="TEXT" size="5" name="GR8" align="TOP" maxlength="5"></td>
+                  <td><input type="TEXT" size="5" name="CR8" align="TOP" maxlength="5"></td>
+                  </tr>
+                  <tr align="CENTER">
+                  <td colspan="3"><input type="BUTTON" class="Calculate_btn" value="Calculate" name="CalcButton" onclick="gpacalc()"></td>
+                  </tr>
+                  </tbody></table>
+                  <br>
+                  <br>
+                  <table id="table1" border="5" bgcolor="#cfcccc" cellpadding="5" cellspacing="2">
+                    <tbody>
+                      <tr>
+                        <th>Semester GPA:</th>
+                        <th><input type="TEXT" size="5" name="GPACurrent" align="TOP" maxlength="5" readonly=""></th>
+                       
+                      </tr>
+                      <tr>
+                        <th>Semester Credit Total:</th>
+                        <th><input type="TEXT" size="5" name="creditsCurrent" align="TOP" maxlength="5" readonly=""></th>
+                      
+                      </tr>
+                      </tbody>
+                      </table>
+
+                </form>
+
+
+
+              </div>
+            </div>
+
+            
+            <footer>
+              
+               <div class="footer_bottom">
+                   <div class="icon_foot">
+                      <a href="#" class="fa fa-facebook"></a>
+                      <a href="#" class="fa fa-twitter"></a>
+                      <a href="#" class="fa fa-google"></a>
+                      <a href="#" class="fa fa-linkedin"></a>
+                      <a href="#" class="fa fa-youtube"></a>
+                      <a href="#" class="fa fa-instagram"></a>
+                   </div>
+                   <p>Copyright &copy; 2020. all right resereved</p>
+               </div>
+            </footer>
+            
+        </main>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
